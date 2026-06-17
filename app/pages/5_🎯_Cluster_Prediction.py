@@ -134,11 +134,11 @@ if st.button(
         • Tingkat keparahan rendah
         """)
 
-    elif cluster == 1:
+    else:
 
         st.markdown("""
         <div class='cluster-medium'>
-        🟡 Cluster 1 - Medium Impact Disaster
+        🔴 Cluster 1 - Medium/High Impact Disaster
         </div>
         """,
         unsafe_allow_html=True)
@@ -146,30 +146,13 @@ if st.button(
         st.warning("""
         Karakteristik:
 
-        • Dampak menengah
+        • Dampak menengah/tinggi
 
-        • Korban menengah
+        • Korban menengah/tinggi
 
-        • Kerugian ekonomi menengah
-        """)
+        • Kerusakan menengah/tinggi
 
-    else:
-
-        st.markdown("""
-        <div class='cluster-high'>
-        🔴 Cluster 2 - High Impact Disaster
-        </div>
-        """,
-        unsafe_allow_html=True)
-
-        st.error("""
-        Karakteristik:
-
-        • Korban tinggi
-
-        • Kerusakan tinggi
-
-        • Kerugian ekonomi besar
+        • Kerugian ekonomi menengah/tinggi
         """)
 
 # =====================================================
